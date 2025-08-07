@@ -3,7 +3,7 @@ on:
   # executed once a week on Sundays at 00:00
   schedule:
     # - cron: "0 0 * * 1"
-     - cron: '0 0 * * *'  # 每天 UTC 时间 00:00 运行一次
+  - cron: '0 21 * * *'  # 每天 UTC 21:00（= 北京时间次日 05:00）
   workflow_dispatch:
 
 concurrency:
